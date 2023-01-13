@@ -294,11 +294,6 @@ void uartTask()
             break;
             
         case '4':
-            if ( alarmState == false )  {
-                uartUsb.write( "The alarm is not active, code can not be entered\r\n", 50 );
-                break;
-                }
-
             uartUsb.write( "Please enter the four digits numeric code ", 42 );
             uartUsb.write( "to deactivate the alarm: ", 25 );
 
